@@ -6,10 +6,10 @@ class Pokemon
   end
   
   def self.save(name, type , db)
-    db.execute("INSERT INTO pokemon (name, ) VALUES (#{name}, #{type});")
+    db.execute("INSERT INTO pokemon (name, type) VALUES (#{name}, #{type});")
   end
   def self.find(poka, type , db)
-    db.execute("SELECT * pokemon (name, tp) VALUES (#{name}, #{type});")
+    db.execute("SELECT * pokemon (name, type) VALUES (#{name}, #{type});")
   end
   
 end
